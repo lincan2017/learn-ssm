@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 @Getter
 @Component
 public class Cat {
+    private Integer id;
     private String name;
     private Integer age;
     private String owner;
