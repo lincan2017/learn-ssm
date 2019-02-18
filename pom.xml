@@ -14,6 +14,7 @@
         <junit.version>4.12</junit.version>
         <mysql-conn.version>5.1.38</mysql-conn.version>
         <jdk.version>1.8</jdk.version>
+        <javax.servlet.version>3.1.0</javax.servlet.version>
         <mybatis.version>3.4.6</mybatis.version>
     </properties>
 
@@ -53,6 +54,23 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <!--spring mvc-->
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!--dao-->
